@@ -1,7 +1,7 @@
 <template>
     <div class="plan">
       <div class="description">
-        <span class="title"> {{ planIcon }} {{ name }}
+        <span class="title"> {{ name }} 
           
         </span>
       </div>
@@ -10,8 +10,12 @@
   
   <script setup>
   //Usando un macro para definir las propiedades
-  const props = defineProps (['name','planIcon']);
-  console.log(props.name);
+  //const props = defineProps (['name','planIcon']);
+ defineProps ({
+  name : {
+    type: String, required: true
+         }, 
+ });
   </script>
   
   <style scoped>
