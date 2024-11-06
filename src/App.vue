@@ -8,7 +8,7 @@ const plans = ref (['El cafetero', 'El intelectual' , 'El Chelastian']);
 <template>
   <header>
     <div style="text-align: center;">
-      <br><span id="logo"> Derechos segun tu color :</span><br>
+      <br><span id="logo"> Tonos de piel :</span><br>
       <img src="./assets/logo.png" alt="logo">
     </div>
   </header>
