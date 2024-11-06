@@ -5,7 +5,7 @@ import PlanItem from './components/plan-item.vue'; // Importa el componente Plan
 <template>
   <header>
     <div style="text-align: center;">
-      <br><span id="logo">TONOS DE PIEL :</span><br>
+      <br><span id="logo"> Derechos segun tu color :</span><br>
       <img src="./assets/logo.png" alt="logo">
     </div>
   </header>
@@ -19,10 +19,9 @@ import PlanItem from './components/plan-item.vue'; // Importa el componente Plan
 
     <div class="plans">
       <!-- Usamos el componente PlanItem en lugar de los bloques de plan -->
-      <PlanItem>El Soltero</PlanItem>
-      <PlanItem>El Curioso</PlanItem>
-      <PlanItem>El Adicto</PlanItem>
-      <PlanItem>El picnic</PlanItem>
+      <PlanItem planIcon="😎" name= "El Soltero"> </PlanItem>
+      <PlanItem planIcon="🍻" name= "El Chelero"></PlanItem> 
+      <PlanItem planIcon="🧠" name= "El Intelectual"></PlanItem>
     </div>
   </div>
 </template>
