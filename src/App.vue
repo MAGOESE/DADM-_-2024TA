@@ -1,15 +1,12 @@
 <script setup>
-
-import { ref } from 'vue';
-import PlanItem from './components/plan-item.vue'; // Importa el componente PlanItem
-const plans = ref (['El cafetero', 'El intelectual' , 'El Chelastian']);
+import PlanPicker from './components/PlanPicker.vue'
 </script>
 
 <template>
   <header>
-    <div style="text-align: center;">
-      <br><span id="logo"> Tonos de piel :</span><br>
-      <img src="./assets/logo.png" alt="logo">
+    <div>
+      <span id="logo">Liquid Gold Box</span>
+      <img src="./assets/logo.png" alt="logo" />
     </div>
   </header>
 
@@ -20,11 +17,8 @@ const plans = ref (['El cafetero', 'El intelectual' , 'El Chelastian']);
       Viajamos por el mundo para encontrar el mejor café de origen único para ti
     </h2>
 
-    <div class="plans">
-      <!-- Usamos el componente PlanItem en lugar de los bloques de plan -->
-      <PlanItem v-for="plan in plans" :key="plan" :name= plan ></PlanItem>
-      
-    </div>
+    <!-- TODO INCLUDE PLAN-PICKER COMPONENT -->
+    <PlanPicker />
   </div>
 </template>
 
