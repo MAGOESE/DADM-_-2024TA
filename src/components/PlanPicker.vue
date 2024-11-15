@@ -13,9 +13,14 @@ const selectPlan = (name) => {
 
 <template>
   <div class="plans">
-    <PlanPickerItem v-for="plan in plans" :key="plan" :name="plan" @select="selectPlan" />
+    <PlanPickerItem v-for="plan in plans" 
+    :key="plan" 
+    :name="plan" 
+    @select="selectPlan" 
+    :select-plan="selectedPlan"
+    />
   </div>
-
+  <p>{{  selectPlan }}</p>
 </template>
 
 <style scoped></style>
